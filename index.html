@@ -3,10 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Unit Conversion</title>
   </head>
   <body>
+    <div class="main-wrapper">
+      <section class="main-section">
+        <h1 class="main-header">Metric/Imperial Unit Conversion</h1>
+        <div class="convert-wrapper">
+          <input id="input-el" type="number" />
+          <button id="convert-btn">Convert</button>
+        </div>
+      </section>
+      <section class="result-section">
+        <div class="result-wrapper">
+          <h3 class="result-header">Length (Meter/Feet)</h3>
+          <p id="length-result" class="result-p"></p>
+        </div>
+        <div class="result-wrapper">
+          <h3 class="result-header">Volume (Liters/Gallons)</h3>
+          <p id="volume-result" class="result-p"></p>
+        </div>
+        <div class="result-wrapper">
+          <h3 class="result-header">Mass (Kilograms/Pounds)</h3>
+          <p id="mass-result" class="result-p"></p>
+        </div>
+      </section>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>
